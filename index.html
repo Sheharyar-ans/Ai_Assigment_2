@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Eng Num" id="Eng"><br>
+    <input type="text" placeholder="Enter Urdu Num" id="Urdu"><br>
+    <input type="text" placeholder="Enter Isl Num" id="Isl"><br>
+    <input type="text" placeholder="Enter SST Num" id="SST"><br>
+    <input type="text" placeholder="Enter Maths Num" id="Maths"><br>
+    <button onclick="Submit()">Result</button>
+
+
+
+
+    <script>
+        function Submit(){
+            eng = document.getElementById("Eng").value
+            Urdu = document.getElementById("Urdu").value
+            Isl = document.getElementById("Isl").value
+            SST = document.getElementById("SST").value
+            Maths = document.getElementById("Maths").value
+
+            let result = (Number(eng)+Number(Urdu)+Number(Isl)+Number(SST)+Number(Maths))/5
+            document.write(result);
+        }
+    </script>
+</body>
+</html>
